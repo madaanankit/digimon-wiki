@@ -28,7 +28,6 @@ const HomeComponent = () => {
   }, []);
 
   const handleChange = (event: any) => {
-    console.log({ value: event.target.value });
     if (event.target.value === "") {
       setDigimonCopy(digimon);
     } else {
