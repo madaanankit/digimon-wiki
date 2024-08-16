@@ -40,13 +40,13 @@ const HomeComponent = () => {
   }
 
   return (
-    <div>
+    <>
       {digimonCopy.length ?
         <>
-          <div className="w-full max-w-xs">
+          <div className="w-full lg:max-w-xs">
             <Input type="text" placeholder="Search here..." onChange={handleChange} />
           </div>
-          <Carousel className="w-full max-w-xs mt-10">
+          <Carousel className="w-full lg:max-w-xs mt-10">
             <CarouselContent>
               {digimonCopy.map((item: any, index) => {
                 return (
@@ -65,7 +65,7 @@ const HomeComponent = () => {
         </>
         : <div className="text-white">Loading...</div>
       }
-    </div>
+    </>
   )
 }
 

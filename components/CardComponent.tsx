@@ -15,10 +15,10 @@ const CardComponent = ({ item }: any) => {
         {!isImageReady && 'Loading image...'}
           <Image
               src={item.img}
-              height={0}
-              width={0}
-              sizes="100vw"
+              width={250}
+              height={250}
               onLoad={handleLoading}
+              loading='lazy'
               className="shadow rounded-lg overflow-hidden border flex-1 w-fit inline-block" alt="card-image" />
 
         </div>

@@ -3,7 +3,7 @@ import HomeComponent from "@/components/HomeComponent";
 export default function Home() {
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 bg-black">
+    <main className="p-24 flex flex-col justify-center items-center w-[100vw]">
       <HomeComponent />
     </main>
   );
